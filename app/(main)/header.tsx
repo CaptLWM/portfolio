@@ -31,18 +31,25 @@ export default function Header() {
               <a className="mr-5 hover:text-gray-900 dark:text-white">홈</a>
             </Link>
 
-            <Link legacyBehavior href="/projects">
+            <Link legacyBehavior href="/myproject">
               <a className="mr-5 hover:text-gray-900 dark:text-white">
                 프로젝트
               </a>
             </Link>
 
-            <a
+            <Link legacyBehavior href="/introduce">
+              <a className="mr-5 hover:text-gray-900 dark:text-white">
+                Introduce
+              </a>
+            </Link>
+
+            {/* 오픈 카카오톡 만들때 */}
+            {/* <a
               href="https://open.kakao.com/o/s1BHyWgc"
               className="mr-5 hover:text-gray-900"
             >
               연락하기
-            </a>
+            </a> */}
           </nav>
           {/* 다크모드 토글 버튼 작업해야함 */}
           <DarkModeToggleButton />
