@@ -12,7 +12,7 @@ export default function RootLayout({
     <html lang="ko">
       <body>
         <main>
-          <ThemeProvider>{children}</ThemeProvider>
+          <ThemeProvider attribute="class">{children}</ThemeProvider>
         </main>
       </body>
     </html>

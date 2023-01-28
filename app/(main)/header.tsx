@@ -20,17 +20,21 @@ export default function Header() {
               >
                 <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
               </svg>
-              <span className="ml-3 text-xl">빡빡이 포트폴리오</span>
+              <span className="ml-3 text-xl dark:text-white">
+                빡빡이 포트폴리오
+              </span>
             </a>
           </Link>
 
           <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
             <Link legacyBehavior href="/">
-              <a className="mr-5 hover:text-gray-900">홈</a>
+              <a className="mr-5 hover:text-gray-900 dark:text-white">홈</a>
             </Link>
 
             <Link legacyBehavior href="/projects">
-              <a className="mr-5 hover:text-gray-900">프로젝트</a>
+              <a className="mr-5 hover:text-gray-900 dark:text-white">
+                프로젝트
+              </a>
             </Link>
 
             <a
