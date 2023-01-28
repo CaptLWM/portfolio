@@ -1,6 +1,7 @@
+"use client";
+
+import { ThemeProvider } from "next-themes";
 import "./globals.css";
-import Header from "./header";
-import Footer from "./footer";
 
 export default function RootLayout({
   children,
@@ -8,10 +9,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <>
-      <Header />
-      <body>{children}</body>
-      <Footer />
-    </>
+    <html lang="ko">
+      <body>
+        <main>
+          <ThemeProvider>{children}</ThemeProvider>
+        </main>
+      </body>
+    </html>
   );
 }
